@@ -58,11 +58,13 @@ describe('Snack', function() {
     var fruitSnack = new Snack("Fruit Snack");
     var fruit = new Snack("Fruit");
     var apple = new Snack("Apple");
+    var kitKat = new Snack("kit kat")
 
     assert.equal(pistachio.healthy, false);
     assert.equal(fruitSnack.healthy, true);
     assert.equal(fruit.healthy, true);
     assert.equal(apple.healthy, false);
+    assert.equal(kitKat.healthy, false);
     // this is obviously a silly way to find healthy food IRL.
   });
 

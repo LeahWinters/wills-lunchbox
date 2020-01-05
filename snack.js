@@ -1,9 +1,9 @@
 class Snack {
-  constructor(type){
+  constructor(type, isInLunchBox){
     this.deliciousLevel = "extra";
     this.type = type;
     this.amount = 100;
-    this.isInLunchBox = false;
+    this.isInLunchBox = isInLunchBox || false;
     this.cuttingItClose = false;
     this.healthy = this.checkIfHealthy();
   }

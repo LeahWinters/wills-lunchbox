@@ -94,7 +94,7 @@ describe('Lunchbox', function() {
     assert.deepEqual(healthySnacks, [fruitSnack, fruit]);
   });
 
-  it('should still be able to identify all healthy snacks', function() {
+  it.only('should still be able to identify all healthy snacks', function() {
     var khalidsBox = new LunchBox({ owner: "Khalid", madeOf: "plastic", shape: "rectangular prism", color: "clear" });
     var pretzels = new Snack("Pretzels");
     var fruitSnack = new Snack("Fruit Snack");
